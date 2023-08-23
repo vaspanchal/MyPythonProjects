@@ -1,0 +1,18 @@
+note - use python -m pyinstaller <filepy> instead of pyinstaller <filepy>
+
+steps to make executable out of python files
+
+step 1 : install pyinstaller (pip install pyninstaller)
+
+step 2 : add pyinstaller path to system variables (pip show pyinstaller) it gives location of script
+
+step 3 : open terminal in that project's directory and type (python -m PyInstaller <file_name>.py)
+	 it will create a 'file_name.spec' file
+
+step 4 : open that spec file 
+
+step 5 : modify the 'analysis' section by providing file detail in 'datas' argument
+	 datas = [ (file_name.py),(img.jpg),(sound.mp3) ],
+
+step 4 : now, type (python -m PyInstaller <file_name>.spec)
+	 it will create a dist directory with executable file in it.

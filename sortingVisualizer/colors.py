@@ -1,0 +1,5 @@
+LIME = '#5bfa46'
+LIGHT_GRAY = '#c2c2c2'
+BLACK = '#000000'
+WHITE = '#FFFFFF'
+BLUE = '#0CA8F6'
