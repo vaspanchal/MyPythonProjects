@@ -26,7 +26,7 @@ def Downloader():
     p =Playlist(str(link.get()))
 
     for videos in p.videos:
-        video = videos.streams.first()
+        video = videos.streams.filter(res="1080p").first()
         video.download()
 
     Label(root, text = 'DOWNLOADED', font = 'arial 15').place(x= 180 , y = 210)
